@@ -47,10 +47,10 @@ echo $DNS > ./dns.var
 
 echo 1 > ./last_used_ip.var
 
-read -p "Enter the name of the WAN network interface ([ENTER] set to default: eth0): " WAN_INTERFACE_NAME
+read -p "Enter the name of the WAN network interface ([ENTER] set to default: enX0): " WAN_INTERFACE_NAME
 if [ -z $WAN_INTERFACE_NAME ]
 then
-  WAN_INTERFACE_NAME="eth0"
+  WAN_INTERFACE_NAME="enX0"
 fi
 
 echo $WAN_INTERFACE_NAME > ./wan_interface_name.var
